@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasky</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class=>
+            <p class="text-white text-center">TASKY</p>
+        </nav>
+    </header>
+    <section class="task-section">
+        <div class="row" id="container">
+            <form>
+                <div class="task-management-section">
+                    <p class="mb-2">Manage Your Tasks</p>
+                    <div class="form-floating">
+                        <input type="text" id="text" class="form-control" placeholder="A task input is required"
+                            >
+                        <label for="text" class="form-label ">Enter New Task</label>
+                        <button class="blue" id="task-button">ADD TASK</button>
+                    </div>
+                </div>
+            </form>
+            <div class="task-filter-section">
+                <h5>Tasks</h5>
+                <div class="form-floating task-form">
+                    <input type="text" id="filter-text" class="form-control" placeholder="A task input is required">
+                    <label for="filter-text" class="form-label ">Filter Tasks</label>
+                </div>
+                 <ul class="ul-collection"></ul> 
+                <button class="black ">CLEAR TASKS</button>
+
+            </div>
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="about-column col-lg-6">
+                    <h5>About Tasky</h5>
+                    <p>
+                        Tasky is a task management app that allows you to keep track, stay on top of your tasks
+                      </p>
+                </div>
+                <div class="features-column col-lg-6">
+                    <h5>Features</h5>
+                    <ul>
+                        <li>Add a task</li>
+                        <li>Remove a task</li>
+                        <li>Filter through tasks</li>
+                        <li>clear tasks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <small>&copy; Tasky 2025</small>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
