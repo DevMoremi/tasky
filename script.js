@@ -44,7 +44,7 @@ function removeFromTodo(value) {
 }
 //the filtering listener function
 filter.addEventListener('input',function(event){
-    const inputtedValue = event.target.value;
+    const inputtedValue = event.target.value.toLowerCase();
 
     const todos = localStorage.getItem("todos");
     const parseTodo = JSON.parse(todos);
@@ -52,7 +52,7 @@ filter.addEventListener('input',function(event){
 
     if(parseTodo){
         // Get only the inputted values from the todos
-        const filterTodo = parseTodo.filter((todoItem)=> todoItem.includes(inputtedValue));
+        const filterTodo = parseTodo.filter((todoItem)=> todoItem.toLowerCase().includes(inputtedValue));
         console.log('todo' , filterTodo)
 
         listContainer.innerHTML = "";
